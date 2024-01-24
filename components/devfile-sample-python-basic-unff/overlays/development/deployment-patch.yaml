@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-unff
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-umwv-tenant/test-app-vzgc/devfile-sample-python-basic-unff@sha256:25673ee0c00fd3a81af3498863be5b9438084fce39d2e7cbde73398934493c86
+        name: my-python
+        resources: {}
+status: {}
