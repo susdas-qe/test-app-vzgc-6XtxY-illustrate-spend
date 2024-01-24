@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: maven-hello-world-nbip
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/build-e2e-umwv-tenant/test-app-vzgc/maven-hello-world-nbip@sha256:cb444e67f921960f137b5f392037543d72ccb45c436d82e65c855095795e8bc2
         name: my-java-quarkus
         ports:
         - containerPort: 8081
