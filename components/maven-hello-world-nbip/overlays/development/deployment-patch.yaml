@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: maven-hello-world-nbip
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-umwv-tenant/test-app-vzgc/maven-hello-world-nbip@sha256:cb444e67f921960f137b5f392037543d72ccb45c436d82e65c855095795e8bc2
+        name: my-java-quarkus
+        resources: {}
+status: {}
