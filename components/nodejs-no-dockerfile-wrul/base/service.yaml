@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: nodejs-no-dockerfile-wrul
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: nodejs-no-dockerfile-wrul
+    app.kubernetes.io/part-of: test-app-vzgc
+  name: nodejs-no-dockerfile-wrul
+spec:
+  ports:
+  - name: "8080"
+    port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: nodejs-no-dockerfile-wrul
+status:
+  loadBalancer: {}
