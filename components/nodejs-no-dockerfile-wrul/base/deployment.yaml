@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-no-dockerfile-wrul
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-appstudio-qe/build-e2e-umwv-tenant/test-app-vzgc/nodejs-no-dockerfile-wrul@sha256:3fcce420b3a098e9469be0e23e2da733f94fc83e4e61e39c51e6b304a951b06b
         name: my-nodejs
         ports:
         - containerPort: 3001
